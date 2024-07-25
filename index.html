@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#destinations">Destinations</a></li>
+                <!-- <li><a href="#destinations">Destinations</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -24,26 +24,61 @@
     <section class="intro" id="home">
         <h1><b>Discover Your Perfect Getaway</b></h1>
         <p>
-            Search for destinations that match your budget, and location. Uncover hidden gems and iconic landmarks within your budget.
-            Get insightful recommendations, browse stunning photos and videos of location, and easily manage your travel trip and hotel bookings.
+            Search for destinations that match your budget and location. Uncover hidden gems and iconic landmarks within your budget.
+            Get insightful recommendations, browse stunning photos and videos of locations, and easily manage your travel trip and hotel bookings.
         </p>
         <div class="search-container">
-            <select>
+            <select id="location">
                 <option value="" disabled selected>Select Location</option>
                 <option value="paris">Paris</option>
                 <option value="new-york">New York</option>
                 <option value="tokyo">Tokyo</option>
                 <option value="sydney">Sydney</option>
             </select>
-            <select>
-                <option value="" disabled selected>Select Hotel</option>
-                <option value="hotel-1">Hotel 1</option>
-                <option value="hotel-2">Hotel 2</option>
-                <option value="hotel-3">Hotel 3</option>
-                <option value="hotel-4">Hotel 4</option>
+            <select id="price-range">
+                <option value="" disabled selected>Select Price Range</option>
+                <option value="0-500">$0 - $500</option>
+                <option value="500-1000">$500 - $1000</option>
+                <option value="1000-1500">$1000 - $1500</option>
+                <option value="1500-2000">$1500 - $2000</option>
+                <option value="2000+">$2000+</option>
             </select>
+            <button id="explore-btn">Explore</button>
         </div>
-        <img src="assets/banner.jpg" alt="Travel Image" class="intro-image">
+        <div class="intro-cards">
+            <div class="card">
+                <h3>Paris</h3>
+                <p>Explore the city of lights, known for its iconic landmarks like the Eiffel Tower and Louvre Museum.</p>
+                <p><strong>Budget:</strong> $1500<br/>
+                   <strong>Duration:</strong> 5 Days<br/>
+                   <strong>Best Time:</strong> Spring
+                </p>
+            </div>
+            <div class="card">
+                <h3>New York</h3>
+                <p>Experience the vibrant culture of New York City with its bustling streets, Broadway shows, and world-class museums.</p>
+                <p><strong>Budget:</strong> $2000<br/>
+                   <strong>Duration:</strong> 4 Days<br/>
+                   <strong>Best Time:</strong> Fall
+                </p>
+            </div>
+            <div class="card">
+                <h3>Tokyo</h3>
+                <p>Discover the blend of traditional and modern Japan with ancient temples and cutting-edge technology in Tokyo.</p>
+                <p><strong>Budget:</strong> $1800<br/>
+                   <strong>Duration:</strong> 6 Days<br/>
+                   <strong>Best Time:</strong> Autumn
+                </p>
+            </div>
+            <div class="card">
+                <h3>Sydney</h3>
+                <p>Enjoy the stunning beaches, vibrant city life, and iconic landmarks like the Sydney Opera House and Harbour Bridge.</p>
+                <p><strong>Budget:</strong> $1700<br/>
+                   <strong>Duration:</strong> 5 Days<br/>
+                   <strong>Best Time:</strong> Summer
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="features" class="features">
@@ -52,18 +87,22 @@
             <div class="card">
                 <h3>Tailored Recommendations</h3>
                 <p>Get personalized destination and accommodation suggestions based on your preferences.</p>
+                <button>Learn More</button>
             </div>
             <div class="card">
                 <h3>Easy Booking</h3>
                 <p>Book your entire trip, from flights to hotels, directly through our platform.</p>
+                <button>Learn More</button>
             </div>
             <div class="card">
                 <h3>Stunning Visuals</h3>
                 <p>Explore breathtaking photos and videos of your dream destinations.</p>
+                <button>Learn More</button>
             </div>
             <div class="card">
                 <h3>Comprehensive Search</h3>
                 <p>Find hidden gems and iconic landmarks that fit your budget and location preferences.</p>
+                <button>Learn More</button>
             </div>
         </div>
     </section>
