@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - The Great Escape</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>The Great Escape</h1>
+            </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#features">Features</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <body>
+            <div id="search-container">
+                <select>
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="paris">Paris</option>
+                    <option value="new-york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sydney">Sydney</option>
+                </select>
+                <div class="date-input-wrapper">
+                    <label for="check-in" class="date-label">Check-in</label>
+                    <input type="date" id="check-in" class="search-input">
+                </div>
+                <div class="date-input-wrapper">
+                    <label for="check-out" class="date-label">Check-out</label>
+                    <input type="date" id="check-out" class="search-input">
+                    
+                </div>
+                <input type="number" id="guests" placeholder="Guests" class="search-input">
+                <button id="search-btn" class="search-button">Search</button>
+            </div>
+        </body>
+       
+           
+    </section>
+
+
+
+    <section class="recommendations">
+        <h2>Hotels Available</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="../assets/hotels/hotel2.webp" alt="Hotel Image">
+                <div class="card-content">
+                    <h3>The Oakes Hotel Overlooking the Falls</h3>
+                    <p>Fallsview Location, Comforting Amenities</p>
+                    <p><strong>Price:</strong> $229</p>
+                    <p><strong>Rating:</strong> 7.0 (20305 reviews)</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/hotels/hotel1.jpg" alt="Hotel Image">
+                <div class="card-content">
+                    <h3>Skyline Hotel & Waterpark</h3>
+                    <p>Waterpark Access</p>
+                    <p><strong>Price:</strong> $233</p>
+                    <p><strong>Rating:</strong> 7.5 (7814 reviews)</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/hotels/hotel3.jpg" alt="Hotel Image">
+                <div class="card-content">
+                    <h3>Skyline Hotel</h3>
+                    <p>Waterpark Access</p>
+                    <p><strong>Price:</strong> $233</p>
+                    <p><strong>Rating:</strong> 7.5 (7814 reviews)</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/hotels/hotel4.jpeg" alt="Hotel Image">
+                <div class="card-content">
+                    <h3>Waterpark</h3>
+                    <p>Waterpark Access</p>
+                    <p><strong>Price:</strong> $250</p>
+                    <p><strong>Rating:</strong> 7.5 (7814 reviews)</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+        
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 The Great Escape. All rights reserved.</p>
+    </footer>
+</body>
+</html>
