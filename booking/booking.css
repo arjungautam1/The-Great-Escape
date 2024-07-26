@@ -5,10 +5,10 @@ body {
     box-sizing: border-box;
     background-color: #f0f0f0;
     color: #333;
-  }
-  
-  /* Header Styles */
-  header {
+}
+
+/* Header Styles */
+header {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 20px;
@@ -17,50 +17,50 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
-  
-  nav {
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-right: 20px;
-  }
-  
-  .logo h1 {
+}
+
+.logo h1 {
     margin: 0;
     font-size: 1.5em;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     background-color: #0056b3;
     border-radius: 5px;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     margin: 10px 0;
     font-size: 2.5em;
-  }
-  
-  header p {
+}
+
+header p {
     margin: 10px 0 0;
-  }
+}
 
 .search-section {
     background-color: #f8f8f8;
@@ -72,7 +72,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1rem; /* Adjust gap as needed */
+    justify-content: space-between; /* Align items */
     padding: 1rem;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -83,7 +84,7 @@ body {
 #search-container .search-input,
 #search-container .search-button {
     flex: 1;
-    margin: 0.5rem;
+    margin: 0.5rem 0; /* Margin adjusted for vertical spacing */
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -93,7 +94,7 @@ body {
     max-width: 100%;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 #search-container .search-button {
@@ -107,34 +108,40 @@ body {
     background-color: #218838;
 }
 
-.search-input, .filter-select {
-    flex: 1;
-    margin: 0.5rem;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.search-input {
+    flex: 2; /* Make the search input take more space */
+}
+
+@media (max-width: 1200px) {
+    #search-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #search-container select,
+    #search-container .search-input,
+    #search-container .search-button {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #search-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #search-container select,
+    #search-container .search-input,
+    #search-container .search-button {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 
-.search-button {
-    flex: 1;
-    margin: 0.5rem;
-    padding: 0.75rem;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-
-
-.search-button:hover {
-    background-color: #218838;
-}
-
-/* Existing styles remain unchanged */
-
+/* Recommendations */
 .recommendations {
     max-width: 1200px;
     margin: 2rem auto;
@@ -146,12 +153,18 @@ body {
     text-align: center;
 }
 
+/* Card Container */
+.cards-section {
+    overflow: hidden; /* Hide anything that overflows */
+    padding: 1rem;
+}
+
 .card-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2rem;
     padding-bottom: 1rem;
+    scroll-snap-type: x mandatory; /* Optional: for smooth scrolling */
 }
 
 .card {
@@ -159,9 +172,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     overflow: hidden;
-    flex: 0 0 auto;
-    width: 300px; /* Adjust width as needed */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center; /* Optional: for smooth scrolling */
 }
 
 .card img {
@@ -199,23 +211,17 @@ footer {
     padding: 10px;
     background-color: #007BFF;
     color: #fff;
-  }
-
-
+}
 
 /* Responsive styles */
 @media (max-width: 1200px) {
     .card-container {
-        flex-wrap: wrap;
-    }
-
-    .card {
-        width: calc(50% - 1rem); /* Two cards per row */
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
     }
 }
 
 @media (max-width: 768px) {
-    .card {
-        width: calc(100% - 1rem); /* One card per row */
+    .card-container {
+        grid-template-columns: 1fr; /* One card per row */
     }
 }
