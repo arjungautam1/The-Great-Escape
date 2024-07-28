@@ -10,7 +10,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #007BFF;
+  background-color: #2a9d8f;
   color: #fff;
   padding: 10px 20px;
   text-align: center;
@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #0056b3;
+  background-color: #2a9d8f;
   border-radius: 5px;
 }
 
@@ -113,7 +113,7 @@ section h1 {
 }
 
 .search-container button {
-  background-color: #28a745;
+  background-color: #e9c46a ;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -133,7 +133,7 @@ search-container button:hover {
 }
 
 .features button {
-  background-color: #0392e4;
+  background-color: #e9c46a ;
   color: white;
   border-radius: 5px;
   border-color: white;
@@ -144,7 +144,7 @@ search-container button:hover {
 }
 
 .features button:hover {
-  background-color: #3064c6;
+  background-color: #daa317 ;
   color: white;
 }
 
@@ -166,6 +166,18 @@ search-container button:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
+.card_tag{
+  width: fit-content;
+  border: solid 3px orangered;
+  padding: 4px;
+  background-color: orangered;
+  color: #fff;
+  margin-bottom: 2px;
+}
+#card_visit_tag{
+  font-weight: 900;
+  display: flex;
+}
 
 .card:hover {
   transform: translateY(-10px);
@@ -175,6 +187,69 @@ search-container button:hover {
   margin-top: 0;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #264653;
+    margin: 0;
+    padding: 0;
+}
+
+.tour-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.tour-card h2 {
+    font-size: 1.8em;
+    color: #264653;
+    margin: 15px 0;
+}
+
+.tour-card p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #264653;
+}
+
+.visit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a9d8f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1em;
+   
+}
+
+
+
+.visit-button:hover {
+    background-color: #1f776d;
+    transform: scale(1.05);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
 /* Call to Action Section */
 .cta {
   text-align: center;
@@ -183,7 +258,7 @@ search-container button:hover {
 }
 
 .cta button {
-  background-color: #28a745;
+  background-color: #e9c46a ;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -194,14 +269,14 @@ search-container button:hover {
 }
 
 .cta button:hover {
-  background-color: #218838;
+  background-color: #daa317 ;
 }
 
 /* Footer Styles */
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #007BFF;
+  background-color: #2a9d8f;;
   color: #fff;
 }
 

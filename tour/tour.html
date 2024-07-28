@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Details</title>
+    <link rel="stylesheet" href="/tour/tour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="../index.html">THE GREAT ESCAPE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto my-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../booking/booking.html">Book Now</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../contact/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="../assets/newyork.webp" alt="New York">
+            <div class="card-body">
+                <h1 class="card-title">Tour Name</h1>
+                <p class="card-text">
+                    Discover the enchanting landscapes and rich cultural heritage of our featured destination. This tour includes guided excursions to historical landmarks, immersive local experiences, and plenty of leisure time to explore at your own pace. From picturesque villages to bustling markets, you’ll find endless opportunities to capture unforgettable memories.
+                </p>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.5 (200 reviews)</span>
+                </div>
+                <h3>Plan Your Trip</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" id="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hotel">Hotel</label>
+                        <select id="hotel" required>
+                            <option value="" disabled selected>Select a hotel</option>
+                            <option value="hotel1">Hotel 1</option>
+                            <option value="hotel2">Hotel 2</option>
+                            <option value="hotel3">Hotel 3</option>
+                        </select>
+                    </div>
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="score-table">
+            <h3>Score Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Criteria</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Quality of Service</td>
+                        <td>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Customer Satisfaction</td>
+                        <td>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Value for Money</td>
+                        <td>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
