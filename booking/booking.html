@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - The Great Escape</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="../index.html">THE GREAT ESCAPE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto my-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html#features">Book Now</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../contact/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="search-section">
+        <body>
+            <div id="search-container">
+                <select>
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="paris">Paris</option>
+                    <option value="new-york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sydney">Sydney</option>
+                </select>
+                <div class="date-input-wrapper">
+                    <label for="check-in" class="date-label">Check-in</label>
+                    <input type="date" id="check-in" class="search-input">
+                </div>
+                <div class="date-input-wrapper">
+                    <label for="check-out" class="date-label">Check-out</label>
+                    <input type="date" id="check-out" class="search-input">
+                    
+                </div>
+                <input type="number" id="guests" placeholder="Guests" class="search-input">
+                <button id="search-btn" class="search-button">Search</button>
+            </div>
+        </body>
+       
+           
+    </section>
+
+
+
+    <section class="recommendations">
+        <h2>Hotels Available</h2>
+        <!-- <div class="card-container">
+            <div class="card">
+                <img src="../assets/hotels/hotel2.webp" alt="Hotel Image">
+                <div class="card-content">
+                    <h3>The Oakes Hotel Overlooking the Falls</h3>
+                    <p>Fallsview Location, Comforting Amenities</p>
+                    <p><strong>Price:</strong> $229</p>
+                    <p><strong>Rating:</strong> 7.0 (20305 reviews)</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/hotels/hotel1.jpg" alt="Hotel Image">
+                <div class="card-content">
+                    <h3>Skyline Hotel & Waterpark</h3>
+                    <p>Waterpark Access</p>
+                    <p><strong>Price:</strong> $233</p>
+                    <p><strong>Rating:</strong> 7.5 (7814 reviews)</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/hotels/hotel3.jpg" alt="Hotel Image">
+                <div class="card-content">
+                    <h3>Skyline Hotel</h3>
+                    <p>Waterpark Access</p>
+                    <p><strong>Price:</strong> $233</p>
+                    <p><strong>Rating:</strong> 7.5 (7814 reviews)</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/hotels/hotel4.jpeg" alt="Hotel Image">
+                <div class="card-content">
+                    <h3>Embassy Suites by Hilton Niagara Falls Fallsview</h3>
+                    <p>Fallsview Location, Comforting Amenities</p>
+                    <p><strong>Price:</strong> $229</p>
+                    <p><strong>Rating:</strong> 7.0 (20305 reviews)</p>
+                    <button>Book Now</button>
+                </div>
+           
+        </div> -->
+
+
+    <div class="card-container">
+        <div class="card">
+            <img src="../assets/hotels/hotel2.webp" alt="Hotel Image">
+            <div class="card-content">
+                <h3>The Oakes Hotel Overlooking the Falls</h3>
+                <p>Fallsview Location, Comforting Amenities</p>
+                <p><strong>Price:</strong> $229</p>
+                <p><strong>Rating:</strong> 7.0 (20305 reviews)</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/hotels/hotel1.jpg" alt="Hotel Image">
+            <div class="card-content">
+                <h3>Skyline Hotel & Waterpark</h3>
+                <p>Waterpark Access</p>
+                <p><strong>Price:</strong> $233</p>
+                <p><strong>Rating:</strong> 7.5 (7814 reviews)</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/hotels/hotel3.jpg" alt="Hotel Image">
+            <div class="card-content">
+                <h3>Skyline Hotel</h3>
+                <p>Waterpark Access</p>
+                <p><strong>Price:</strong> $233</p>
+                <p><strong>Rating:</strong> 7.5 (7814 reviews)</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/hotels/hotel4.jpeg" alt="Hotel Image">
+            <div class="card-content">
+                <h3>Embassy Suites by Hilton Niagara Falls Fallsview</h3>
+                <p>Fallsview Location, Comforting Amenities</p>
+                <p><strong>Price:</strong> $229</p>
+                <p><strong>Rating:</strong> 7.0 (20305 reviews)</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+
+
+       
+        
+        
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 The Great Escape. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
