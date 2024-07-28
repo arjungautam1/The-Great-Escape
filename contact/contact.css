@@ -156,7 +156,7 @@ section h1 {
 .contact-form button {
     margin-top: 1rem;
     padding: 0.75rem;
-    background-color: #e9c46a ;
+    background-color: green; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -166,7 +166,8 @@ section h1 {
 }
 
 .contact-form button:hover {
-    background-color: #daa317 ;
+    background-color: darkgreen ;
+    transform: scale(1.05); 
 }
 
 footer {

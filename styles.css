@@ -113,7 +113,7 @@ section h1 {
 }
 
 .search-container button {
-  background-color: #e9c46a ;
+  background-color: gray ;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -123,8 +123,9 @@ section h1 {
   border-radius: 5px;
 }
 
-search-container button:hover {
-  background-color: #218838;
+.search-container button:hover {
+  background-color: #4f4f4f;
+  transform: scale(1.05); 
 }
 
 /* Features Section */
@@ -133,20 +134,22 @@ search-container button:hover {
 }
 
 .features button {
-  background-color: #e9c46a ;
+  background-color: green; /* Current yellow button background */
   color: white;
   border-radius: 5px;
-  border-color: white;
+  border: 2px solid white;
   padding: 10px 20px;
   font-size: 1.2em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .features button:hover {
-  background-color: #daa317 ;
+  background-color: darkgreen;
   color: white;
+  transform: scale(1.05); 
 }
+
 
 .card-container {
   display: flex;
@@ -235,9 +238,7 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
     font-size: 1em;
-   
 }
-
 
 
 .visit-button:hover {
@@ -248,8 +249,6 @@ body {
 }
 
 
-
-
 /* Call to Action Section */
 .cta {
   text-align: center;
@@ -258,7 +257,7 @@ body {
 }
 
 .cta button {
-  background-color: #e9c46a ;
+  background-color: gray ;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -269,7 +268,7 @@ body {
 }
 
 .cta button:hover {
-  background-color: #daa317 ;
+  background-color: #4f4f4f;
 }
 
 /* Footer Styles */
