@@ -118,24 +118,26 @@ header {
 }
 
 .visit-button {
-    display: inline-block;
-    padding: 10px 20px;
+    display: block; /* Ensures the button is a block-level element */
+    margin: 10px auto; /* Center horizontally with auto margins */
+    padding: 6px 12px; /* Adjust padding as needed */
+    width: 150px; /* Set a specific width for a shorter button */
     background-color: #2a9d8f;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
-    font-size: 1em;
-   
+    font-size: 0.9em; /* Slightly smaller font size */
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
-
-
 
 .visit-button:hover {
     background-color: #1f776d;
     transform: scale(1.05);
     color: #fff;
     text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .features {

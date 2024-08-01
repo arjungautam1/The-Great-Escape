@@ -86,6 +86,10 @@ header p {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    
 }
 
 .card-body {
