@@ -198,3 +198,19 @@ footer {
         width: calc(100% - 1rem); /* One card per row */
     }
 }
+
+
+.map iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hours ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.hours li {
+    padding: 0.5rem 0;
+    color: #264653;
+}
